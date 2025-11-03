@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Etrat Baloch — SEO Expert, Content Writer, and Web Designer helping brands grow through content and search optimization." />
+  <meta name="keywords" content="Etrat Baloch, SEO Expert, Content Writer, Web Designer, Digital Marketing" />
+  <meta name="author" content="Etrat Baloch" />
+  <title> Aznain Hameed - SEO Expert</title>
+ <link rel="stylesheet" href="footer.css">
+ <link rel="stylesheet" href="header.css">
+  <style>
+    /* Global Styles */
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1e3a8a;
+      --text-dark: #0f172a;
+      --text-light: #475569;
+      --bg: #f8fbff;
+      --white: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Reusable */
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .underline {
+      width: 80px;
+      height: 4px;
+      background-color: var(--primary);
+      margin: 0.5rem auto 2.5rem;
+      border-radius: 4px;
+    }
+
+    /* Hero Section */
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 90%;
+      max-width: 1100px;
+      margin: 70px auto;
+      padding: 50px 30px;
+      border-radius: 20px;
+      background: var(--white);
+      box-shadow: 0 4px 20px var(--shadow);
+      animation: fadeUp 1s ease-in-out;
+    }
+
+    .text-section {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    h1 span {
+      color: var(--primary);
+    }
+
+    h3 {
+      font-weight: 600;
+      margin-top: 10px;
+      color: #334155;
+    }
+
+    p {
+      margin-top: 20px;
+      color: var(--text-light);
+      max-width: 500px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary,
+    .btn-outline {
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #fff;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--primary);
+      color: #fff;
+      transform: translateY(-3px);
+    }
+
+    .image-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    .profile-img {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      border: 6px solid var(--primary);
+      object-fit: cover;
+      box-shadow: 0 5px 20px var(--shadow);
+      transition: 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+
+    .status-dot {
+      position: absolute;
+      bottom: 25px;
+      right: 110px;
+      width: 25px;
+      height: 25px;
+      background-color: #22c55e;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 2px 8px var(--shadow);
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .text-section p {
+        margin: 0 auto;
+      }
+
+      .status-dot {
+        bottom: 10px;
+        right: 50%;
+        transform: translateX(50%);
+      }
+    }
+
+    /* About Section */
+    .about-section {
+      max-width: 1200px;
+      margin: 100px auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      flex: 1 1 450px;
+      background-color: var(--white);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px var(--shadow);
+      padding: 30px;
+      text-align: left;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px var(--shadow);
+    }
+
+    .mission {
+      background-color: #eff6ff;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: var(--text-light);
+      margin-bottom: 10px;
+    }
+
+    /* Stats */
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .stat-box {
+      flex: 1 1 250px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .stat-box.green {
+      background: #10b981;
+    }
+
+    .stat-box:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Services */
+    .services-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .service-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .service-card {
+      background-color: var(--white);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px var(--shadow);
+      padding: 30px;
+      text-align: left;
+      flex: 1 1 450px;
+      transition: 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 30px var(--shadow);
+    }
+
+    .icon-box {
+      width: 60px;
+      height: 60px;
+      background-color: #e0ebff;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      color: var(--text-light);
+      position: relative;
+      padding-left: 20px;
+    }
+
+    ul li::before {
+      content: "•";
+      color: var(--primary);
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    /* Footer
+    .footer {
+      background-color: var(--text-dark);
+      color: white;
+      padding: 60px 20px 30px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 30px;
+    }
+
+    .footer-column h3,
+    .footer-column h4 {
+      color: white;
+    }
+
+    .footer-column a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+      list-style: none;
+    }
+
+    .footer-column a:hover {
+      color: #38bdf8;
+    } */
+
+    /* .footer-bottom p {
+      color: white;
+      text-align: center important ;
+      margin-top: 30px;
+    } */
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+.footer {
+      background-color: var(--text-dark);
+      color: white;
+      padding: 60px 20px 30px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 30px;
+    }
+
+    .footer-column h3,
+    .footer-column h4 {
+      color: white;
+    }
+
+    .footer-column a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+      list-style: none;
+    }
+
+    .footer-column a:hover {
+      color: #38bdf8;
+    }
+    /* for the index page  */
+    .center{
+        text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Aznain Hameed</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#services">Services</a>
+      <a href="contcet.html">Contact</a>
+    </nav>
+  </header>
+  <!-- HERO -->
+  <section class="container">
+    <div class="text-section">
+      <h1>Aznain <span>Hameed</span></h1>
+      <h3>SEO Expert | Content Writer | Web Designer</h3>
+      <p>Helping businesses grow with strategic content and search optimization.</p>
+      <div class="buttons">
+        <button class="btn-primary" onclick="scrollToSection('about')">Explore My Work →</button>
+        <button class="btn-outline" onclick="alert('Contact me via LinkedIn or Email!')">Get in Touch</button>
+      </div>
+    </div>
+
+    <div class="image-section">
+      <img src="https://media.licdn.com/dms/image/v2/D4D35AQHtpAfwyMosxA/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1697531811458?e=1761969600&v=beta&t=-mkCJwjs5i5jqtGhZP3xP1f24_qT5aCw9KHbjomqRFg" alt="Etrat Baloch" class="profile-img" />
+      <div class="status-dot" aria-label="Online status"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="underline"></div>
+
+    <div class="about-container">
+      <div class="card">
+        <h3>My Journey</h3>
+        <p>With over 3 years of dedicated experience in the digital marketing landscape, I've developed a deep passion for SEO, content strategy, and helping businesses connect authentically with their audiences.</p>
+        <p>My journey began with a fascination for how search engines work and evolved into a comprehensive understanding of content creation, technical optimization, and user experience design.</p>
+        <p>What drives me is the perfect blend of creativity and strategy crafting content that not only ranks well but genuinely serves and engages readers.</p>
+      </div>
+
+      <div class="card mission">
+        <h3>My Mission</h3>
+        <p>I stay constantly updated with the latest SEO trends, algorithm changes, and industry best practices to ensure my clients always receive cutting-edge strategies that deliver real results.</p>
+        <p><strong>“To help brands build authentic connections with content that educates, inspires, and converts.”</strong></p>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="stats">
+      <div class="stat-box">
+        <h3>3+</h3>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-box green">
+        <h3>6M+</h3>
+        <p>Organic Traffic Generated</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section">
+    <h2 class="section-title">My Services</h2>
+    <div class="underline"></div>
+    <p><b>Comprehensive digital solutions to help your business thrive online</b></p>
+
+    <div class="service-cards">
+      <div class="service-card">
+        <div class="icon-box">🔍</div>
+        <h3>SEO Services</h3>
+        <ul>
+          <li>On-page SEO</li>
+          <li>Off-page SEO</li>
+          <li>Technical SEO</li>
+          <li>Keyword Research</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-box">🖋️</div>
+        <h3>Content Writing</h3>
+        <ul>
+          <li>Blog Posts</li>
+          <li>Web Content</li>
+          <li>Business Writing</li>
+          <li>Content Strategy</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3><span class="highlight">Aznain</span> Hameed</h3>
+        <p><a href="#">SEO Expert, Content Writer, and Web Designer helping businesses grow online with strategic solutions.</a></p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">SEO Optimization</a></li>
+          <li><a href="#">Content Writing</a></li>
+          <li><a href="#">WordPress Design</a></li>
+          <li><a href="#">AdSense Approval</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:aznainhameed@gmail.com">aznainhameed@gmail.com</a></li>
+          <li><a href="tel:+923060085141">+923060085141</a></li>
+          <li><a href="#">LinkedIn: Aznain Hameed</a></li>
+        </ul>
+      </div>
+    </div>
+
+   <!-- <div class="footer-bottom">
+  <p style="text-align: center;">© 2025 Etrat Baloch. All rights reserved. Built with passion for digital excellence.</p>
+</div> -->
+<h3 style="text-align: center;">Aznain Hameed</h3>
+    
+<div class="center">© 2025 Aznain Hameed. All rights reserved. Built with passion for digital excellence.</div>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
